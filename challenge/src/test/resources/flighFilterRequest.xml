@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flightFilterRequest>
+	<fromIATACode>EZE</fromIATACode>
+	<toIATACode>LHR</toIATACode>
+	<departDate>06/15/2012</departDate>
+	<returnDate>06/21/2012</returnDate>
+	<adults>1</adults>
+	<children>0</children>
+</flightFilterRequest>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+        <wicket:head>
+            <style>
+                div.wicket-aa {
+                    font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana;
+                    font-size: 12px;
+                    background-color: white;
+                    border-width: 1px;
+                    border-color: #cccccc;
+                    border-style: solid;
+                    padding: 2px;
+                    margin: 1px 0 0 0;
+                    text-align:left;
+                }
+                div.wicket-aa ul { list-style:none; padding: 2px; margin:0; }
+                div.wicket-aa ul li.selected { background-color: #FFFF00; padding: 2px; margin:0; }
+            </style>
+        </wicket:head>
+    </head>
+	<body>
+		<wicket:extend>
+			<h3>Flight Search Modal</h3>
+
+			<div wicket:id="feedback">[[ feedback ]]</div>
+
+			<form wicket:id="form">
+				<label>LEAVING FROM</label>
+				:
+				<span wicket:id="selectedfromIATACode"></span>
+				<input type="text" wicket:id="fromIATACode" size="80" />
+				<br />
+				<label>GOING TO</label>
+				:
+				<span wicket:id="selectedtoIATACode"></span>
+				<input type="text" wicket:id="toIATACode" size="80" />
+				<br />
+				<label>DEPARTING</label>
+				:
+				<input type="text" wicket:id="departDate" />
+				<br />
+				<label>RETURNING</label>
+				:
+				<input type="text" wicket:id="returnDate" />
+				<br />
+				<label>ADULT</label>
+				:
+				<select wicket:id="adults"/>
+				<br />
+				<label>CHILDREN</label>
+				:
+				<select wicket:id="children"/>
+				<br />
+				<br />
+				<input type="submit" value="Search Flight!" wicket:id="submit" />
+			</form>
+		</wicket:extend>
+	</body>
+</html>
